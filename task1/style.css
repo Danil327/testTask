@@ -1,0 +1,87 @@
+.ua,
+.japan,
+.iceland,
+.czech {
+    width: 300px;
+    margin: 10px;
+    height: 200px;
+}
+.ua {
+    background: linear-gradient(to top, yellow 50%, blue 50%);
+}
+
+.japan {
+    position: relative;
+     border: 1px solid gray;
+}
+.japan div div{
+    background-color: red;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin: auto;
+	position: absolute;
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.iceland div {
+	height: 200px;
+	background-color: blue;
+	position: relative;
+}
+
+.iceland > div:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	height: 40px;
+	top: 80px;
+	left: 0;
+}
+
+.horizont {
+	z-index: 11;
+	position: absolute !important;
+	top: 90px;
+	left: 0;
+	width: 100%;
+	background-color: red !important;
+	height: 20px !important;
+}
+
+.vertical {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 80px;
+	width: 20px;
+	height: 100%;
+	background-color: red !important;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+}
+
+.czech {
+    background: linear-gradient(to top, red 50%, white 50%);
+}
+
+.czech div {
+	position: relative;
+}
+
+.czech > div:after {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-left: 125px solid blue;
+	border-top: 100px solid transparent;
+	border-bottom: 100px solid transparent; 
+}
